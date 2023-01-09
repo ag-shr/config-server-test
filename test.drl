@@ -1,0 +1,11 @@
+package com.myspace.test;
+
+
+rule "validating amount"
+	when
+		$a: amounnt >50
+	then
+	    modify($a){
+		    setApproved(true);
+	    }
+end
