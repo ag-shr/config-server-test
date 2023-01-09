@@ -3,7 +3,7 @@ package com.myspace.test;
 
 rule "validating amount"
 	when
-		$a: amounnt >50
+		$a: amounnt >500
 	then
 	    modify($a){
 		    setApproved(true);
